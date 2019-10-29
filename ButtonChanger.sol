@@ -1,5 +1,6 @@
 pragma solidity ^0.5.0;
 
+// h/t https://github.com/NoahZinsmeister/ERC-1484/blob/master/contracts/SignatureVerifier.sol
 contract SignatureVerifier {
     /// @dev Signature verifier
     function isSigned(address _address, bytes32 messageHash, uint8 v, bytes32 r, bytes32 s) public pure returns (bool) {
